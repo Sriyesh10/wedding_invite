@@ -441,14 +441,15 @@
   }
 
   .hero-subtitle {
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font-size: 10px;
-    color: #E8C97A;
-    margin-bottom: 16px;
-  }
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: clamp(8px, 3.2vw, 12px); /* responsive */
+  color: #E8C97A;
+  margin-bottom: 16px;
+  white-space: nowrap; /* 🔥 THIS FIXES YOUR ISSUE */
+}
 
   .hero-names {
     font-family: 'Great Vibes', cursive;
